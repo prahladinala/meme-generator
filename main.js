@@ -35,8 +35,8 @@ bottomTextInput.addEventListener("change", () => {
 
 downPng.addEventListener('click', () => {
     // IF IE/EDGE Supports only PNG
-    if (windows.navigator.msSaveBlob) {
-        windows.navigator.msSaveBlob(canvas.msToBlob(), "prahladinala-memegenerator.png");
+    if (window.navigator.msSaveBlob) {
+        window.navigator.msSaveBlob(canvas.msToBlob(), "prahladinala-memegenerator.png");
         console.log("IE/EDGE")
     }
     console.log("IE/EDGE OUT")
